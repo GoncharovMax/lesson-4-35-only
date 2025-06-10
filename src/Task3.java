@@ -5,14 +5,13 @@ public class Task3 {
         int longest = arr[0];
 
         for (int num : arr) {
-            int length = String.valueOf(Math.abs(num)).length(); // длина числа без минуса
+            int length = String.valueOf(Math.abs(num)).length();
             int short1 = String.valueOf(Math.abs(shortest)).length();
             int long1 = String.valueOf(Math.abs(longest)).length();
 
             if (length < short1) {
                 shortest = num;
             }
-
             if (length > long1) {
                 longest = num;
             }
